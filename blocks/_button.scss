@@ -1,0 +1,91 @@
+.buttons{
+  display: flex;
+  gap: 20px;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.button{
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+
+  border: 1px solid $mint;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: transparent;
+
+  font-family: inherit;
+  font-size: 1.6rem;
+  line-height: 1.1;
+  font-weight: 200;
+  color: $mint;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 55px;
+  transition: .4s linear;
+
+  &:hover{
+    background-color: $mint;
+    color: $darkgreen;
+    border: 1px solid $mint;
+    //box-shadow: 1px 1px 5px black;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 250px;
+    padding: 10px;
+    margin: 20px auto 0px;
+  }
+}
+
+.button_large{
+  width: 400px;
+  height: 50px;
+  border: 1px solid $darkgreen;
+  color: $darkgreen;
+  text-align: center;
+  margin: 48px auto 40px;
+  padding: 10px;
+
+  &:hover{
+    background-color: $darkgreen;
+    color: $middle;
+    border: 1px solid $darkgreen;
+    //box-shadow: 1px 1px 5px black;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 250px;
+    margin: 1.5rem auto;
+  }
+}
+
+.button_small{
+  width: 200px;
+  height: 50px;
+  font-size: 1.2rem;
+  border: 1px solid $mint;
+  color: $mint;
+  padding: 0;
+  padding-top: 14px;
+  padding-left: 32px;
+  margin: 32px 0 0 36px;
+
+  &:hover{
+    background-color: $mint;
+    color: $darkgreen;
+    border: 1px solid $darkgreen;
+    //box-shadow: 1px 1px 5px black;
+  }
+
+  @media screen and (max-width: 420px) {
+    margin: 0 auto;
+  }
+}

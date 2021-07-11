@@ -1,0 +1,53 @@
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:25px;
+  margin: 0;
+  padding: 0;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card__photo{
+  width: 370px;
+  height: 400px;
+}
+
+.card__content{
+  background-color: $white;
+  color: $black;
+  padding: 0;
+  margin: 0;
+}
+
+.card__cat{
+  font-size: 1.07rem;
+  font-weight: 300;
+  margin-left: 13px;
+  margin-top: 10px;
+}
+
+.card__title{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.card__name{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+
+.card__year{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-right: 12px;
+}

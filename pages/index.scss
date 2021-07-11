@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import "vars";
+@import "helpers";
+
+html{
+  font-size: 15px;
+}
+
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $white;
+  background-color: $darkgreen;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Blocks 
+@import "../blocks/header";
+@import "../blocks/container";
+@import "../blocks/user";
+@import "../blocks/nav";
+@import "../blocks/intro";
+@import "../blocks/social";
+@import "../blocks/button";
+@import "../blocks/works";
+@import "../blocks/cards";
+@import "../blocks/about";
+@import "../blocks/footer";

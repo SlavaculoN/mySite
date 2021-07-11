@@ -1,0 +1,37 @@
+.footer{
+  padding: 3.06rem 0 1rem 0;
+  color: rgba($color: $white, $alpha: 0.7);
+
+  @media screen and (max-width: 555px) {
+    padding: 2.4rem 0 1rem 0;
+  }
+}
+
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 555px) {
+    flex-direction: column;
+  }
+}
+
+.footer__copyright{
+  margin: auto 0;
+  font-weight: 400;
+  font-size: 0.93rem;
+  
+  @media screen and (max-width: 555px) {
+    margin-top: 20px;
+    order:2;
+  }
+}
+
+.logo_footer{
+  width: 40px;
+  opacity: 0.7;
+
+  @media screen and (max-width: 555px) {
+    display: none;
+  }
+}

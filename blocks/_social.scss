@@ -1,0 +1,45 @@
+.social{
+  display: flex;
+  max-width: 350px;
+  gap: 20px;
+
+  @media screen and (max-width: 620px) {
+    gap:20px;
+    max-width: 330px;
+    margin: 20px auto;
+  }
+
+  @media screen and (max-width: 500px) {
+    gap:10px;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+}
+
+.social__link{
+  display: flex;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  background-color: $darkgreen;
+  border-radius: 5px;
+  border: 0px solid $white;
+  margin-top: 20px;
+  transition: background-color 0.4s linear, background-image 0.4s linear;
+
+  &:hover{
+    background-color: $mint;
+    background-image: none;
+    border: 1px solid $darkgreen;
+  }
+
+  @media screen and (max-width: 620px) {
+    margin: 0 auto;
+  }
+}
+
+.social__icon{
+  justify-content: center;
+  margin: 0 auto;
+  width: 30px;
+}
